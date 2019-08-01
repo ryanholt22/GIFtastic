@@ -1,0 +1,61 @@
+.one {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.527);
+    border-style: outset;
+    border-color: black;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#searchbar {
+    height: 50px;
+    min-width: 200px;
+    font-size: 1.5rem;
+    display: inline-block;
+    border-style: ridge;
+    border-color:black;
+    background-color: rgba(255, 0, 0, 0.527);
+    color: black;
+}
+
+.button {
+    background-color: rgba(255, 0, 0, 0.527);
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    width: 150px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-style: double;
+    border-color:black;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
