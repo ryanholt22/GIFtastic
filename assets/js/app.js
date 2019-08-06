@@ -2,8 +2,8 @@ var topics = ["GSXR1000", "CBR1000", "CBRF4i", "ZX6R", "H2R", "R1", "R6" ]
 
 function renderButtons () {
   $("#bikes").empty();
-  for (i = 0; i<topics.length; i++) {
-    $("#bikes").append("<button>" + topics[i] + "</button>");
+  for (i = 0; i < topics.length; i++) {
+    $(".bikes").append("<button>" + topics[i] + "</button>");
   }
 }
 
